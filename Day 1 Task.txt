@@ -1,0 +1,23 @@
+HTTP 1.1 was indeed introduced in 1997, a time when the internet was still in its infancy. As websites began to incorporate more images, resource usage increased accordingly. HTTP 1.1 introduced several features to users. One significant change was the use of a single TCP (Transmission Control Protocol) connection. With just one TCP connection, the browser would wait for the response for the index.html file. After receiving it, it would then send another request for CSS and await the response. However, this setup wasn't sufficient for broader use. In response, the number of TCP connections increased to six. Even with these additional connections, it wasn't enough for the growing demands of the web, leading to performance issues.
+
+HTTP/2 was indeed introduced in 2015. It utilizes a single TCP connection tosend multiple streams of data at once, ensuring a secure transmission. It's renowned for its speed, largely due to its ability to avoid redundant data transmission. If a header repeats frequently, HTTP/2 won't resend the data. This leads to faster delivery overall. Additionally, it allows for easy pushing of frames, enhancing performance. HTTP/2 also features server push, meaning if you request index.html, the server will automatically provide associated CSS and JS resources. Since HTTP/2 builds upon HTTP/1.1, if there's an interruption, it's possible to revert to HTTP/1.1 seamlessly. Overall, HTTP/2 is a significant improvement and a reliable protocol for web communication.
+
+Objects:
+Object is a set of key value pair. where the 'name' is key and the value is 'Saisha', 'Age' is key and '22' is value. It can also be separated by DOT Notation, Bracket Notation. The object is denoted by {}. we can able to insert object into object, object into Array.
+
+var Data= {
+Name: "Saisha"
+Age: 22
+Address: "Chennai, Tamilnadu, India"
+Pincode:{
+pincode1: 12345
+Pincode2: 67890
+} //Object
+
+//Dot notation
+Console.log(Data.age)
+
+//Bracket Notation
+console.log(Data['Name'])
+
+console.log(Data.Pincode.pincode1)
